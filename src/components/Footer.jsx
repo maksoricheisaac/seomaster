@@ -52,7 +52,7 @@ const Footer = () => {
                     <div className="grid grid-cols-3 gap-5">
                         {projects.map((project) => (
                             <Link to="" key={project}>
-                                <img src={project} className="h-44 w-44 md:h-24 md:w-24" />
+                                <img src={project} className="h-16 w-16 md:h-24 md:w-24" />
                             </Link>
                         ))}
                     </div>

@@ -11,7 +11,7 @@ const Team = () => {
                 {members.map((member) => (
                     <CardTeam 
                         key={member.id} 
-                        img={member.img}
+                        img={member.id}
                         firstname={member.firstname}  
                         lastname={member.lastname}
                         title={member.title}

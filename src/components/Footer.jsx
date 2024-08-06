@@ -1,7 +1,15 @@
+
+import img1 from '../../public/images/portfolio-1.jpg'
+import img2 from '../../public/images/portfolio-2.jpg'
+import img3 from '../../public/images/portfolio-3.jpg'
+import img4 from '../../public/images/portfolio-4.jpg'
+import img5 from '../../public/images/portfolio-5.jpg'
+import img6 from '../../public/images/portfolio-6.jpg'
 import { Link } from 'react-router-dom'
 import footer from '../../public/images/footer.png'
-import projects from '../../public/data/projects.json'
 import { useState } from 'react'
+
+const projects = [img1, img2, img3, img4, img5, img6]
 
 const Footer = () => {
     const [email, setEmail] = useState("")
@@ -43,8 +51,8 @@ const Footer = () => {
                     <h3 className="font-bold text-2xl my-2">Project Gallery</h3>
                     <div className="grid grid-cols-3 gap-5">
                         {projects.map((project) => (
-                            <Link to="" key={project.id}>
-                                <img src={`public/images/${project.img}`} className="h-44 w-44 md:h-24 md:w-24" />
+                            <Link to="" key={project}>
+                                <img src={project} className="h-44 w-44 md:h-24 md:w-24" />
                             </Link>
                         ))}
                     </div>

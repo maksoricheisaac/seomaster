@@ -19,11 +19,11 @@ const Contact = () => {
         }
     }
     return (
-        <section className="flex flex-col items-center">
+        <section className="px-14 md:px-24 flex flex-col items-center">
             <h1 className="text-center text-4xl font-bold my-10">Contact For Any Query</h1>
             {error && <div className="p-3 bg-red-600 text-center text-red-900 w-[540px] rounded-lg my-5"> {error} </div>}
             {success && <div className="p-3 bg-green-600 text-center text-green-900 w-[540px] rounded-lg my-5"> {success} </div>}
-            <form onSubmit={handleSubmit} className="flex flex-col gap-5 px-14 w-[650px]">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full  md:w-[650px]">
                 <div className="flex flex-col md:flex-row gap-5">
                    <input onChange={(e) => setName(e.target.value)} className="py-4 w-full md:w-1/2 px-3 border-gray-300 border rounded-lg" type="text" name="name" id="name" placeholder="Your Name"/>
                    <input onChange={(e) => setEmail(e.target.value)} className="py-4 w-full md:w-1/2 px-3 border-gray-300 border rounded-lg" type="email" name="email" id="email" placeholder="Your Email" />

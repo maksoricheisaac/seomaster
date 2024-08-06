@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "firstname": "Jhon",
+        "lastname": "Doe",
+        "title": "CEO",
+        "img": "team-1.jpg"
+    },
+    {
+        "id": 2,
+        "firstname": "Emma",
+        "lastname": "William",
+        "title": "Manager",
+        "img": "team-2.jpg"
+    },
+    {
+        "id": 3,
+        "firstname": "Noah",
+        "lastname": "Michael",
+        "title": "Designer",
+        "img": "team-3.jpg"
+    }
+]
